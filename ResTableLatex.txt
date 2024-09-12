@@ -1,0 +1,37 @@
+\begin{table}[!htbp] \footnotesize \centering 
+  \caption{Bottled Water Expenditures: Random Parameters Logit} 
+  \label{table:rplogit} 
+\begin{tabular}{@{\extracolsep{12pt}} lcc} 
+\toprule
+ & Model 1 & Model 2 \\ 
+\midrule
+Price ($\alpha$) & $-2.603^{***}$ & $-3.090^{***}$  \\
+	& $(0.027)$ & ($0.029)$ \\ 
+Total Water & $0.009^{***}$ & $0.011^{***}$ \\
+	& $(0.0003)$ & ($0.0003)$  \\
+Jug & $-1.417^{***}$ & $-1.632^{***}$ \\
+	& $(0.005)$ & ($0.005)$ \\ 
+Flavored brand & $0.020^{***}$ & $0.020^{***}$ \\
+	& $(0.0001)$ & ($0.0001)$ \\ 
+Luxury brand & $-0.069^{***}$ & $-0.069^{***}$ \\
+	& $(0.003)$ & ($0.002)$ \\ 
+National brand & $0.006^{***}$ & $0.006^{***}$ \\
+	& $(0.00004)$ & ($0.00004)$ \\ 
+Other brand & $0.001^{***}$ & $0.001^{***}$ \\
+	& $(0.00003)$ & ($0.00003)$ \\ 
+HH size x Total water & $0.0005^{***}$ & $0.0005^{***}$ \\
+	& $(0.00005)$ & ($0.0001)$ \\ 
+Fracking x Total water & $0.005^{***}$ & $0.004^{***}$ \\
+	& $(0.0001)$ & ($0.0001)$ \\ 
+Var(Price) & $0.871^{***}$ & $1.333^{***}$ \\ 
+Var(Total water) & $0.0001$ & $0.0001$ \\ 
+Cov(Price, Total water) & $-0.006$ & $-0.008$ \\ 
+Household FE & & \checkmark \\
+\midrule
+Log Likelihood & $-57,315.15$ & $-55,091.21$ \\
+Number of households & 397 & 397 \\
+Number of trips & 84,046 & 84,046 \\
+\bottomrule
+\multicolumn{3}{l}{ *** p$<$0.01, ** p$<$0.05, * p$<$0.1} \\
+\end{tabular} 
+\end{table} 
