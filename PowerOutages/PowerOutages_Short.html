@@ -24,7 +24,7 @@ class: center, middle, inverse, title-slide
 ### Justin Kirkpatrick
 ]
 .date[
-### <br><br><br><br>.font50[Last updated September 12, 2024]
+### <br><br><br><br>.font50[Last updated September 13, 2024]
 ]
 
 ---
@@ -47,32 +47,38 @@ layout: true
 }
 &lt;/style&gt;
 
-
-
 ---
 class: inverseMSU
-# Power Outages
+# Power Outages...
+
+&lt;br&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="blksq.png" alt="Photo by Justin Kirkpatrick" width="100%" /&gt;
+&lt;p class="caption"&gt;Photo by Justin Kirkpatrick&lt;/p&gt;
+&lt;/div&gt;
+---
+class: inverseMSU
+# Power Outages...
 
 ### Cause expense .font50[&lt;a name=cite-andresenUnderstanding2023&gt;&lt;/a&gt;[Andresen, Kurtz, Hondula, Meerow, and Gall (2023)](#bib-andresenUnderstanding2023)]
 - Food spoilage
-
 - Health impacts
   - Medical equipment
   - Psychological
   - Increase in ER GI admissions following prolonged outage
-  
 - Crime
 
 --
-
-- Many of these are worse for poor households
+- Many of these are worse for vulnerable households
   - Safety (esp. non-English speaking)
-
+  
 --
 
 ### Are expensive to mitigate
 - A 100% reliable grid is astronomically expensive
-
+- Climate change
+- Of interest to MPSC
 
   
 ---
@@ -88,13 +94,14 @@ class: MSU
 &lt;img src="https://bakerhomeenergy.com/app/uploads/2023/07/how-home-batteries-work-sonnen-battery.jpeg" style="display: block; margin: auto;" /&gt;
 ]
 
-#### Private substitutes
-- Households purchase private reliability ($2k-$20k)
-- Some distribution of preference for reliability
 
 #### Reliability as a public good
 - Reliability is a public good, but can be local
 - Undergrounding lines, tree-trimming
+
+#### Private substitutes
+- Households purchase private reliability ($2k-$20k)
+- Some distribution of preference for reliability
 
 `\(\rightarrow\)` What can we say about the optimal level of grid reliability, and how does it vary with the distribution of preferences for reliability?
 
@@ -102,17 +109,19 @@ class: MSU
 class: MSU
 # Existing Lit
 
-### &lt;a name=cite-brehmBackup2024&gt;&lt;/a&gt;[Brehm, Johnston, and Milton (2024)](#bib-brehmBackup2024)
+#### "Value of Lost Load"
+- Extensive lit, estimates of WTP via averting expenditure, surveys
+
+#### &lt;a name=cite-brehmBackup2024&gt;&lt;/a&gt;[Brehm, Johnston, and Milton (2024)](#bib-brehmBackup2024)
 - Lower public reliability lowers electricity costs for all
 - As private investment in reliability increases, the optimal public reliability decreases
-- &lt;a name=cite-eppleEnds1996&gt;&lt;/a&gt;[Epple and Romano (1996a)](#bib-eppleEnds1996)
+- &lt;a name=cite-eppleEnds1996&gt;&lt;/a&gt;[Epple and Romano (1996a)](#bib-eppleEnds1996) "The Ends Against The Middle"
   - Public education: low-preference + high-preference coalition to keep spending down
-  - "The Ends Against The Middle" (but a "voting model")
+  - A "voting model"
 
 
 --
-
-### But
+#### But
 - Brehm et al. assume single measure of reliability (and investment)
   - Different service areas can have different reliability
   - People may sort on unobserved preferences
@@ -123,40 +132,51 @@ class: MSU
 # Questions
 
 #### 1. Are there differences in reliability across income?
+- Speaks to incidence of costs, but not necessarily welfare
 
-
-#### 2. Are there differences in private reliability across income?
+#### 2. Are there differences in private reliability across income x outages?
+- Previous literature: yes
+- Poorly identified
 
 --
 
 #### 3. Is there evidence of sorting by reliability?
-- If **yes**, optimal reliability in a service area is very unstable
+- If **yes**, optimal public reliability in a service area is very unstable
   - Initial conditions (private investment) is important
-- If **no**, optimal reliability for an area is probably the same mean reliability (inclusive of private provision) across all areas.
+- If **no**, optimal reliability for an area is likely the same mean reliability (inclusive of private provision) across all areas.
   - Less add'l public reliability investment should occur when more generators are present
-  - Potential note: Co-adoption of batteries with solar
+  - Potential twist: Co-adoption of batteries with solar
   
 ---
 class: MSU
 # Next
 
-### Why hasn't anyone estimated sorting yet?
-- Straightforward hedonic estimation
-- Because granular data on outages doesn't exist
-  - poweroutage.us is city-level
-  - Most papers use this or county-level
-
+.pull-left[
 ### New MI data
-- Tract-level outages for 10% most impacted tracts
-- Monthly reporting (started in 2023)
+- Tract-level outages for 10% most impacted tracts from MPSC
+  - Monthly reporting (started in 2023) so .font-red[ongoing collection]
+- Previously, granular data on outages didn't really exist
+  - poweroutage.us is city-level
+  - Most papers use poweroutage.us or county-level
+]
 
---
-
-### A. Cross-sectional incidence of outages
-
-### B. CoreLogic transaction price for hedonic estimation
+.pull-right[
+&lt;img src="ex1.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
 
 
+### Estimate
+- Cross-sectional incidence of outages
+- Hedonic value of reliability using CoreLogic transaction price
+
+---
+class: MSU
+# Preliminary Results
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="PowerOutages_Short_insertimage_1.png" alt="Correlation between sustained outages and tract covariates" width="75%" /&gt;
+&lt;p class="caption"&gt;Correlation between sustained outages and tract covariates&lt;/p&gt;
+&lt;/div&gt;
 
 
 ---
